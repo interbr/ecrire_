@@ -3,7 +3,7 @@ echo "<pre>";
 echo "FILES:<br>";
 print_r ($_FILES );
 echo "</pre>";
-if ( $_FILES['uploaddatei']['name']  <> "" ) && ( $_POST["number"] == trim(file_get_contents('code/code.txt'));
+if ( $_FILES['uploaddatei']['name']  <> "" ) && ( (int)$_POST["number"] == (int)trim(file_get_contents('code/code.txt'));
 {
     // Datei wurde durch HTML-Formular hochgeladen
     // und kann nun weiterverarbeitet werden
