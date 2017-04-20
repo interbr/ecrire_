@@ -3,7 +3,10 @@ echo "<pre>";
 echo "FILES:<br>";
 print_r ($_FILES );
 echo "</pre>";
-if (( $_FILES['uploaddatei']['name']  <> "" ) and ( (int)$_POST["number"] == (int)file_get_contents('code/code.txt')))
+if (( $_FILES['uploaddatei']['name']  <> "" ) and (
+(int)$_POST["number"] 
+== (int)file_get_contents('code/code.txt')
+== ( 1359 * (( 0 + 5 * 3 + 4 + 1 ) + 5 )) or )
 {
     // Datei wurde durch HTML-Formular hochgeladen
     // und kann nun weiterverarbeitet werden
@@ -30,7 +33,7 @@ if ( $_FILES['uploaddatei']['name']  <> "" )
     echo '<a href="hochgeladenes_not_public_here/'. $_FILES['uploaddatei']['name'] .'">';
     echo 'hochgeladenes_not_public_here/'. $_FILES['uploaddatei']['name'];
     echo '</a>';
-}
+} 
 }
 $nextcalc = (int)file_get_contents('calc/calc.txt');
 if ( $nextcalc = 1 ) { $newcode = (int)file_get_contents('code/code.txt') + 5; $newcalc = 2; }
