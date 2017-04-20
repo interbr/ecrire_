@@ -13,7 +13,7 @@
 		<center>
 		<p><a href="/der-planet-der-sechs-loeffel.odt">Der Text (Den Beginn bitte nicht ändern)</a></p>
 		<form enctype="multipart/form-data" action="upload_check_calc.php" method="post">
-		<p>Diese Datei hochladen: <input name="userfile" type="file" /></p>
+		<p>Diese Datei hochladen: <input name="uploaddatei" type="file" /></p>
 		<p>Upload-Number: <input type="text" name="number" size="60" maxlength="255" /></p>
 		<p><input type="submit" value="Send File" /></p>
 		</form>
