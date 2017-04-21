@@ -3,10 +3,18 @@ echo "<pre>";
 echo "FILES:<br>";
 print_r ($_FILES );
 echo "</pre>";
+$x = $y = $z = 0;
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
-(int)$_POST["number"] 
-== (int)file_get_contents('code/code.txt')
-== ( 1359 * (( 0 + 5 * 3 + 4 + 1 ) + 5 )) or )
+(int)$_POST["number"] == (int)file_get_contents('code/code.txt') and while
+( $y != (int)file_get_contents('code/code.txt') and $y !> (int)file_get_contents('code/code.txt') )
+while ( $z % 5437 != 0; )
+{   if ( $z % 4 = 0 ) { $y + 5; $z++; };
+	elseif ( $z % 4 = 1 ) { $y * 1.2; $z++; };
+	elseif ( $z % 4 = 2 ) { $y + 4; $z++; };
+	elseif ( $z % 4 = 3 ) { $y + 1; $z++; };
+	echo "The number is: $x <br>";
+    $z++;
+}
 {
     // Datei wurde durch HTML-Formular hochgeladen
     // und kann nun weiterverarbeitet werden
@@ -21,6 +29,20 @@ if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 }
 else
 {
+if (( $_FILES['uploaddatei']['name']  <> "" ) and (
+(int)$_POST["number"] == (int)file_get_contents('code/code.txt')
+{
+    // Datei wurde durch HTML-Formular hochgeladen
+    // und kann nun weiterverarbeitet werden
+    move_uploaded_file (
+         $_FILES['uploaddatei']['tmp_name'] ,
+         'hochgeladenes_not_public_here/'. $_FILES['uploaddatei']['name'] );
+ 
+    echo "<p>Hochladen war erfolgreich: ";
+    echo '<a href="hochgeladenes_not_5437th_number_not_public_here/'. $_FILES['uploaddatei']['name'] .'">';
+    echo 'hochgeladenes_not_public_here/'. $_FILES['uploaddatei']['name'];
+    echo '</a>';
+} 
 if ( $_FILES['uploaddatei']['name']  <> "" )
 {
     // Datei wurde durch HTML-Formular hochgeladen
