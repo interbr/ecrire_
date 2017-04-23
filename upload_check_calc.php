@@ -20,12 +20,11 @@ if ( $z % 5437 == 0 )
     // und kann nun weiterverarbeitet werden
     move_uploaded_file (
          $_FILES['uploaddatei']['tmp_name'],
-		 'hochgeladenes_public/'. $zufall
-		 $_FILES['uploaddatei']['name'] );
+		 'hochgeladenes_public/'. $zufall+$_FILES['uploaddatei']['name'] );
  
     echo "<p>Hochladen war erfolgreich: ";
-    echo '<a href="hochgeladenes_public/'. $zufall$_FILES['uploaddatei']['name'] .'">';
-    echo 'hochgeladenes_public/'. $zufall$_FILES['uploaddatei']['name'];
+    echo '<a href="hochgeladenes_public/'. $zufall+$_FILES['uploaddatei']['name'] .'">';
+    echo 'hochgeladenes_public/'. $zufall+$_FILES['uploaddatei']['name'];
     echo '</a>';
 }}
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
@@ -35,11 +34,11 @@ if (( $_FILES['uploaddatei']['name']  <> "" ) and (
     // und kann nun weiterverarbeitet werden
     move_uploaded_file (
          $_FILES['uploaddatei']['tmp_name'] ,
-         'hochgeladenes_not_5437th_number_not_public_here/'. $zufall$_FILES['uploaddatei']['name'] );
+         'hochgeladenes_not_5437th_number_not_public_here/'. $zufall+$_FILES['uploaddatei']['name'] );
  
     echo "<p>Hochladen war erfolgreich: ";
-    echo '<a href="hochgeladenes_not_5437th_number_not_public_here/'. $zufall$_FILES['uploaddatei']['name'] .'">';
-    echo 'hochgeladenes_not_5437th_number_not_public_here/'. $zufall$_FILES['uploaddatei']['name'];
+    echo '<a href="hochgeladenes_not_5437th_number_not_public_here/'. $zufall+$_FILES['uploaddatei']['name'] .'">';
+    echo 'hochgeladenes_not_5437th_number_not_public_here/'. $zufall+$_FILES['uploaddatei']['name'];
     echo '</a>';
 }
 if ( $_FILES['uploaddatei']['name']  <> "" )
@@ -48,11 +47,11 @@ if ( $_FILES['uploaddatei']['name']  <> "" )
     // und kann nun weiterverarbeitet werden
     move_uploaded_file (
          $_FILES['uploaddatei']['tmp_name'] ,
-         'hochgeladenes_not_public_here/'. $zufall$_FILES['uploaddatei']['name'] );
+         'hochgeladenes_not_public_here/'. $zufall+$_FILES['uploaddatei']['name'] );
  
     echo "<p>Hochladen war erfolgreich: ";
-    echo '<a href="hochgeladenes_not_public_here/'. $zufall$_FILES['uploaddatei']['name'] .'">';
-    echo 'hochgeladenes_not_public_here/'. $zufall$_FILES['uploaddatei']['name'];
+    echo '<a href="hochgeladenes_not_public_here/'. $zufall+$_FILES['uploaddatei']['name'] .'">';
+    echo 'hochgeladenes_not_public_here/'. $zufall+$_FILES['uploaddatei']['name'];
     echo '</a>';
 } 
 $nextcalc = (int)file_get_contents('calc/calc.txt');
