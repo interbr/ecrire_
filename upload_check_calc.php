@@ -7,13 +7,13 @@ $y = 1;
 $z = 0;
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 (int)$_POST["number"] == (int)file_get_contents('code/code.txt'))) { do
-{   if ( $z % 4 == 0 ) { $y + 5; $z++; }
-	elseif ( $z % 4 == 1 ) { $y * 1.2; $z++; }
-	elseif ( $z % 4 == 2 ) { $y + 4; $z++; }
-	elseif ( $z % 4 == 3 ) { $y + 1; $z++; };
-	echo "The number is correct. File published.";
+{   if ( $z % 4 == 0 ) { $y + 5; }
+	elseif ( $z % 4 == 1 ) { $y * 1.2; }
+	elseif ( $z % 4 == 2 ) { $y + 4; }
+	elseif ( $z % 4 == 3 ) { $y + 1; };
+	z++;
 } while ( $y == !(int)file_get_contents('code/code.txt') );
-echo $z;
+echo $z 'and' $y;
 if ( $z % 5437 != 0 ) 
 {
     // Datei wurde durch HTML-Formular hochgeladen
