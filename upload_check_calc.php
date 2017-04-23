@@ -7,7 +7,7 @@ $y = 1;
 $z = 0;
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 (int)$_POST["number"] == (int)file_get_contents('code/code.txt'))) { while
-( $y <= (int)file_get_contents('code/code.txt') ) {
+( $y == !(int)file_get_contents('code/code.txt') ) {
 if ( $z % 5437 != 0 )
 {   if ( $z % 4 == 0 ) { $y + 5; $z++; }
 	elseif ( $z % 4 == 1 ) { $y * 1.2; $z++; }
