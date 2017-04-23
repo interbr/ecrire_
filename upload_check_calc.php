@@ -15,7 +15,8 @@ if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 	$z++;
 } while ( $y < (int)file_get_contents('code/code.txt') );
 echo $y . 'and2' . $z . "<br />";
-if ( $z % 5437 == 0 ) 
+if ( $z % 10 //5437 
+== 0 ) 
 {
     // Datei wurde durch HTML-Formular hochgeladen
     // und kann nun weiterverarbeitet werden
