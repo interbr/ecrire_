@@ -3,7 +3,8 @@ echo "<pre>";
 echo "FILES:<br>";
 print_r ($_FILES );
 echo "</pre>";
-$x = $y = $z = 0;
+$y = 1;
+$z = 0;
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 (int)$_POST["number"] == (int)file_get_contents('code/code.txt'))) { while
 ( $y <= (int)file_get_contents('code/code.txt') ) {
