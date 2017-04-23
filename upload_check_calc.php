@@ -13,7 +13,7 @@ if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 	elseif ( $z % 4 == 2 ) { $y + 4; }
 	elseif ( $z % 4 == 3 ) { $y + 1; };
 	$z++;
-} while ( (int)$y <= (int)file_get_contents('code/code.txt') );
+} while ( (int)$y !== (int)file_get_contents('code/code.txt') );
 echo $y . 'and2' . $z;
 if ( $z % 5437 == 0 ) 
 {
