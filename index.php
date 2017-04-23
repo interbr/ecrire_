@@ -4,10 +4,8 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="description" content="Write a novel to an end and make every 5437th upload visible on a website">
-		<link rel="stylesheet" href="/css/styles.css">
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<script src="/js/script.js" type="text/javascript"></script>
 		</head>
 		<body>
 		<center>
