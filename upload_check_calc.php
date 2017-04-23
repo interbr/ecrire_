@@ -27,8 +27,6 @@ if ( $z % 5437 != 0 )
     echo 'hochgeladenes_public/'. $_FILES['uploaddatei']['name'];
     echo '</a>';
 }}
-else
-{
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 (int)$_POST["number"] == (int)file_get_contents('code/code.txt')))
 {
@@ -42,7 +40,7 @@ if (( $_FILES['uploaddatei']['name']  <> "" ) and (
     echo '<a href="hochgeladenes_not_5437th_number_not_public_here/'. $_FILES['uploaddatei']['name'] .'">';
     echo 'hochgeladenes_not_5437th_number_not_public_here/'. $_FILES['uploaddatei']['name'];
     echo '</a>';
-} 
+}
 if ( $_FILES['uploaddatei']['name']  <> "" )
 {
     // Datei wurde durch HTML-Formular hochgeladen
@@ -56,7 +54,6 @@ if ( $_FILES['uploaddatei']['name']  <> "" )
     echo 'hochgeladenes_not_public_here/'. $_FILES['uploaddatei']['name'];
     echo '</a>';
 } 
-}
 $nextcalc = (int)file_get_contents('calc/calc.txt');
 if ( $nextcalc = 1 ) { $newcode = (int)file_get_contents('code/code.txt') + 5; $newcalc = 2; }
 elseif ( $nextcalc = 2 ) { $newcode = (int)file_get_contents('code/code.txt') * 1.2; $newcalc = 3; }
