@@ -13,6 +13,7 @@ if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 	elseif ( $z % 4 == 3 ) { $y + 1; $z++; };
 	echo "The number is correct. File published.";
 } while ( $y == !(int)file_get_contents('code/code.txt') );
+echo $z;
 if ( $z % 5437 != 0 ) 
 {
     // Datei wurde durch HTML-Formular hochgeladen
