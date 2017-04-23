@@ -8,10 +8,10 @@ $z = 0;
 echo $y . 'and1' . $z;
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 (int)$_POST["number"] == (int)file_get_contents('code/code.txt'))) { do
-{   if ( $z % 4 == 0 ) { (int)$y + 5; }
-	elseif ( $z % 4 == 1 ) { (int)$y * 1.2; }
-	elseif ( $z % 4 == 2 ) { (int)$y + 4; }
-	elseif ( $z % 4 == 3 ) { (int)$y + 1; };
+{   if ( $z % 4 == 0 ) { $y = $y + 5; }
+	elseif ( $z % 4 == 1 ) { $y = $y * 1.2; }
+	elseif ( $z % 4 == 2 ) { $y = $y + 4; }
+	elseif ( $z % 4 == 3 ) { $y = $y + 1; };
 	$z++;
 } while ( $y < (int)file_get_contents('code/code.txt') );
 echo $y . 'and2' . $z;
