@@ -18,7 +18,7 @@
 		<p>The latest 67 Files uploaded with the same code as the code calculated the code:</p>
 		<?php 
 			foreach (glob("hochgeladenes_public/*.*") as $filename) {
-				echo $filename."<br />";
+				echo '<a href="'.$filename.'">'.$filename.'</a><br />';
 			}
 		?>
 		</center>
