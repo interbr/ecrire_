@@ -14,7 +14,7 @@ if ( $z % 5437 != 0 )
 	if ( $z % 4 == 3 ) { $y + 1; $z++; };
 	echo "The number is: $x <br>";
     $z++;
-}}}
+}}
 {
     // Datei wurde durch HTML-Formular hochgeladen
     // und kann nun weiterverarbeitet werden
@@ -26,11 +26,11 @@ if ( $z % 5437 != 0 )
     echo '<a href="hochgeladenes/'. $_FILES['uploaddatei']['name'] .'">';
     echo 'hochgeladenes/'. $_FILES['uploaddatei']['name'];
     echo '</a>';
-}
+}}
 else
 {
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
-(int)$_POST["number"] == (int)file_get_contents('code/code.txt')
+(int)$_POST["number"] == (int)file_get_contents('code/code.txt')))
 {
     // Datei wurde durch HTML-Formular hochgeladen
     // und kann nun weiterverarbeitet werden
