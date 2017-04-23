@@ -6,7 +6,6 @@ echo "</pre>";
 $y = 1;
 $z = 0;
 echo $y . 'and1' . $z;
-echo 0 % 8;
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 (int)$_POST["number"] == (int)file_get_contents('code/code.txt'))) { do
 {   if ( $z % 4 == 0 ) { $y + 5; }
@@ -14,7 +13,7 @@ if (( $_FILES['uploaddatei']['name']  <> "" ) and (
 	elseif ( $z % 4 == 2 ) { $y + 4; }
 	elseif ( $z % 4 == 3 ) { $y + 1; };
 	$z++;
-} while ( $y <= (int)file_get_contents('code/code.txt') );
+} while ( (int)$y <= (int)file_get_contents('code/code.txt') );
 echo $y . 'and2' . $z;
 if ( $z % 5437 == 0 ) 
 {
