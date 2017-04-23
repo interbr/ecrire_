@@ -5,7 +5,7 @@ print_r ($_FILES );
 echo "</pre>";
 $x = $y = $z = 0;
 if (( $_FILES['uploaddatei']['name']  <> "" ) and (
-(int)$_POST["number"] == (int)file_get_contents('code/code.txt') and while
+(int)$_POST["number"] == (int)file_get_contents('code/code.txt')) and while
 ( $y != (int)file_get_contents('code/code.txt') and $y !> (int)file_get_contents('code/code.txt') )
 while ( $z % 5437 != 0; )
 {   if ( $z % 4 = 0 ) { $y + 5; $z++; };
