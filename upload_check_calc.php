@@ -19,7 +19,9 @@ if ( $z % 5437 == 0 )
     // Datei wurde durch HTML-Formular hochgeladen
     // und kann nun weiterverarbeitet werden
     move_uploaded_file (
-         $_FILES['uploaddatei']['tmp_name'],'hochgeladenes_public/'. $zufall$_FILES['uploaddatei']['name'] );
+         $_FILES['uploaddatei']['tmp_name'],
+		 'hochgeladenes_public/'. $zufall
+		 $_FILES['uploaddatei']['name'] );
  
     echo "<p>Hochladen war erfolgreich: ";
     echo '<a href="hochgeladenes_public/'. $zufall$_FILES['uploaddatei']['name'] .'">';
