@@ -54,10 +54,10 @@ if ( $_FILES['uploaddatei']['name']  <> "" )
     echo '</a>';
 } 
 $nextcalc = (int)file_get_contents('calc/calc.txt');
-if ( $nextcalc == 1 ) { $newcode = (int)file_get_contents('code/code.txt') + 5; $newcalc = 2; }
-elseif ( $nextcalc == 2 ) { $newcode = (int)file_get_contents('code/code.txt') * 1.2; $newcalc = 3; }
-elseif ( $nextcalc == 3 ) { $newcode = (int)file_get_contents('code/code.txt') + 4; $newcalc = 4; }
-elseif ( $nextcalc == 4 ) { $newcode = (int)file_get_contents('code/code.txt') + 1; $newcalc = 1; };
+if ( $nextcalc == 1 ) { $newcode = file_get_contents('code/code.txt') + 5; $newcalc = 2; }
+elseif ( $nextcalc == 2 ) { $newcode = file_get_contents('code/code.txt') * 1.2; $newcalc = 3; }
+elseif ( $nextcalc == 3 ) { $newcode = file_get_contents('code/code.txt') + 4; $newcalc = 4; }
+elseif ( $nextcalc == 4 ) { $newcode = file_get_contents('code/code.txt') + 1; $newcalc = 1; };
 file_put_contents("code/code.txt", $newcode);
 file_put_contents("calc/calc.txt", $newcalc);
 ?>
