@@ -9,6 +9,8 @@
 		</head>
 		<body>
 		<center>
+		<h1>This system is starting up on tuesday, 28 years after Hungary opened its borders, 14:07h NPT!</h1>
+		<p>Ok, let's make it today, 20:15 NPT, d'accord?</p><!--
 		<p><a href="/der-planet-der-sechs-loeffel.odt">Der Text (Den Beginn bitte nicht &auml;ndern)</a></p>
 		<form enctype="multipart/form-data" action="upload_check_calc.php" method="post">
 		<p>Diese Datei hochladen: <input name="uploaddatei" type="file" /></p>
@@ -20,7 +22,8 @@
 			foreach (glob("hochgeladenes_public/*.*") as $filename) {
 				echo '<a href="'.$filename.'">'.$filename.'</a><br />';
 			}
-		?>
+		?>-->
 		</center>
+		<p style="float: right;"><a href="https://github.com/interbr/ecrire_">https://github.com/interbr/ecrire_</a></p>
 		</body>
 </html>
