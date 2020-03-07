@@ -1,2 +1,2 @@
 # ecrire_
-later
+later, if ... if ... it's possible to not take everything so serious.
