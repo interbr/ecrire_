@@ -1,3 +1,4 @@
+![This is an image](https://worldwideweb.interlectual.org/ecrire_.png)
 # ecrire_
 later, if ... if ... it's possible to not take everything so serious.
 
