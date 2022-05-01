@@ -3,6 +3,8 @@
 
 [ecrire.pismo.de](https://ecrire.pismo.de)
 
+![Felix in GRiD.Garden](https://ecrire.pismo.de/felix.in.grid.garden.jpg)
+
 later, if ... if ... it's possible to not take everything so serious.
 
 Oh, I thought I wrote "it's possible _we_ do not" but like this it's fine. From a beginning being driven/chased from 2017 on I remember it was a main importance to explain a general unnecessaty for people to have hard times as in the word "suffer" because it went rather good so far. That was "in the air" to face as a possible rumour people would think like that.
